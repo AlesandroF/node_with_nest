@@ -36,8 +36,7 @@ export class UsersService {
       { _id: id },
       { $set: updateUserDto },
       { new: true }
-    )
-    .exec();
+    );
   }
 
   async remove(id: string) {
